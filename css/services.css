@@ -1,0 +1,287 @@
+.container-1 {
+  background-color: rgba(211, 211, 211, 0.904);
+  height: 500px;
+  margin-top: 0;
+  padding-bottom: 450px;
+}
+.div-a {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+.h3 {
+  font-size: 40px;
+  position: relative;
+}
+.h3::before {
+  content: "";
+  width: 100%;
+  height: 8px;
+  background-color: gold;
+  position: absolute;
+  bottom: -20px;
+}
+.div-b {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 0;
+  gap: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 30px;
+}
+.service-1 {
+  height: 350px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  position: relative;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(60%);
+  transition: transform 1s ease, opacity 1s ease-in;
+}
+.service-1.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+.service-1:hover h2 {
+  color: black;
+  transition: 1s;
+}
+.service-1:hover  .fa-laptop{
+  color: black;
+  transition: 1s;
+}
+.service-1:hover  .fa-fire-flame-curved{
+  color: black;
+  transition: 1s;
+}
+.service-1:hover  .fa-palette{
+  color: black;
+  transition: 1s;
+}
+.service-1:hover  .fa-user-group{
+  color: black;
+  transition: 1s;
+}
+.service-1:hover  .fa-business-time{
+  color: black;
+  transition: 1s;
+}
+.service-1:hover  .fa-pen-to-square{
+  color: black;
+  transition: 1s;
+}
+.service-1:hover {
+  background-color: gold;
+  transition: 1s;
+  transform: translateY(-10px);
+  border-radius: 20px;
+}
+.fa-laptop {
+  color: gold;
+  position: absolute;
+  font-size: 50px;
+  top: 30px;
+}
+.fa-fire-flame-curved {
+  color: gold;
+  position: absolute;
+  font-size: 50px;
+  top: 30px;
+}
+.fa-palette {
+  color: gold;
+  position: absolute;
+  font-size: 50px;
+  top: 30px;
+}
+.fa-user-group {
+  color: gold;
+  position: absolute;
+  font-size: 50px;
+  top: 30px;
+}
+.fa-business-time {
+  color: gold;
+  position: absolute;
+  font-size: 50px;
+  top: 30px;
+}
+.fa-pen-to-square {
+  color: gold;
+  position: absolute;
+  font-size: 50px;
+  top: 30px;
+}
+
+h2 {
+  font-size: 26px;
+  position: absolute;
+  color: gold;
+  top: 80px;
+}
+h2::before {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -10px;
+  margin-left: 25%;
+}
+
+.p4 {
+  font-size: 18px;
+  width: 300px;
+  text-align: center;
+  margin-top: 70px;
+  color: hsla(0, 0%, 0%, 0.7);
+}
+
+/*------------ media query -----------*/
+@media (max-width:720px) {
+  .container-1 {
+    background-color: rgba(211, 211, 211, 0.904);
+    height: 6700px;
+    width: 100%;
+    margin-top: 0;
+    padding-bottom: 450px;
+  }
+  .div-a {
+    width: 1500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 350px;
+  }
+  .h3 {
+    font-size: 140px;
+    position: relative;
+  }
+  .h3::before {
+    content: "";
+    width: 100%;
+    height: 15px;
+    background-color: gold;
+    position: absolute;
+    bottom: -200px;
+  }
+  .div-b {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    gap: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 30px;
+  }
+  .service-1 {
+    height: 1000px;
+    width: 1300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    border-radius: 100px;
+  }
+  .service-1:hover h2 {
+    color: black;
+    transition: 1s;
+  }
+  .service-1:hover  .fa-laptop{
+    color: black;
+    transition: 1s;
+  }
+  .service-1:hover  .fa-fire-flame-curved{
+    color: black;
+    transition: 1s;
+  }
+  .service-1:hover  .fa-palette{
+    color: black;
+    transition: 1s;
+  }
+  .service-1:hover  .fa-user-group{
+    color: black;
+    transition: 1s;
+  }
+  .service-1:hover  .fa-business-time{
+    color: black;
+    transition: 1s;
+  }
+  .service-1:hover  .fa-pen-to-square{
+    color: black;
+    transition: 1s;
+  }
+  .service-1:hover {
+    background-color: gold;
+    transition: 1s;
+    transform: translateY(-10px);
+    border-radius: 20px;
+  }
+  .fa-laptop {
+    color: gold;
+    position: absolute;
+    font-size: 220px;
+    top: 100px;
+  }
+  .fa-fire-flame-curved {
+    color: gold;
+    position: absolute;
+    font-size: 220px;
+    top: 100px;
+  }
+  .fa-palette {
+    color: gold;
+    position: absolute;
+    font-size: 220px;
+    top: 100px;
+  }
+  .fa-user-group {
+    color: gold;
+    position: absolute;
+    font-size: 220px;
+    top: 100px;
+  }
+  .fa-business-time {
+    color: gold;
+    position: absolute;
+    font-size: 220px;
+    top: 100px;
+  }
+  .fa-pen-to-square {
+    color: gold;
+    position: absolute;
+    font-size: 220px;
+    top: 100px;
+  }
+  h2 {
+    font-size: 100px;
+    position: absolute;
+    color: gold;
+    top: 60px;
+    top: 270px;
+  }
+  h2::before {
+    content: "";
+    width: 50%;
+    height: 15px;
+    background-color: #000000;
+    position: absolute;
+    bottom: -40px;
+    margin-left: 25%;
+  }
+
+  .p4 {
+    font-size: 65px;
+    width: 1000px;
+    text-align: center;
+    margin-top: 500px;
+  }
+}

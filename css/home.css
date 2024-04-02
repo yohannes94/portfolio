@@ -1,0 +1,141 @@
+.home {
+  height: 600px;
+  display: grid;
+}
+.div-1 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.div-2 {
+  height: 50%;
+  margin-top: 0px;
+  margin-left: 100px;
+  margin-bottom: 0;
+  background-color: hsla(0, 0%, 0%, 0.473);
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 70px;
+  padding-top: 0px;
+}
+.span1 {
+  color: gold;
+}
+.span2 {
+  color: gold;
+}
+.h1 {
+  text-shadow: 5px -5px 10px black;
+  margin-bottom: 10px;
+  font-size: 55px;
+  color: white;
+}
+.p1 {
+  text-shadow: 5px -5px 10px black;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-top: 0px;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+.p2 {
+  color: white;
+  width: 400px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.a-2 {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background-color: gold;
+  padding: 20px;
+  margin: 0;
+}
+.div {
+  margin: 0;
+  padding: 0;
+  height: 80%;
+}
+.a-2:hover {
+ background-color: white;
+ box-shadow: 0px 0px 100px 20px gold;
+ border-radius: 10px;
+}
+.a-2:active {
+  background-color: lightgreen;
+}
+
+/*------------ media query -----------*/
+@media (max-width:720px) {
+  .home {
+    height: 2400px;
+    display: grid;
+    width: 1500px;
+    margin-top: 0;
+    padding: 0;
+  }
+  .div-1 {
+    display: grid;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    width: 1500px;
+    
+  }
+  .div-2 {
+    height: 600px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 70px;
+    padding-top: 0px;
+    width: 1400px;
+  }
+  .h1 {
+    text-shadow: 5px -5px 10px black;
+    margin-bottom: 10px;
+    font-size: 140px;
+    color: white;
+  }
+  .p1 {
+    text-shadow: 5px -5px 10px black;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 0px;
+    font-size: 140px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .p2 {
+    color: white;
+    width: 400px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .a-2 {
+    text-decoration: none;
+    font-size: 80px;
+    color: black;
+    background-color: gold;
+    padding: 70px;
+    margin: 0;
+  }
+  .div {
+    margin: 0;
+    padding: 0;
+    height: 80%;
+  }
+  .a-2:hover {
+   background-color: white;
+   box-shadow: 0px 0px 100px 20px gold;
+   border-radius: 10px;
+  }
+  .a-2:active {
+    background-color: lightgreen;
+  }
+}

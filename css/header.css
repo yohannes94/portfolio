@@ -1,0 +1,150 @@
+header {
+  top: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.humburger {
+  display: none;
+}
+.a-1 {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-right: 60px;
+  position:relative;
+  
+}
+.a-1:first-child {
+  color: gold;
+}
+.a-1::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: gold;
+  bottom: -5px;
+  transition: 1s;
+}
+.a-1:hover::before {
+  width: 100%;
+}
+ul {
+  display: none;
+}
+aside {
+  display: none;
+}
+main {
+  margin-top: 100px;
+}
+
+/*------------ media query -----------*/
+@media (max-width:720px) {
+  header {
+    display: flex;
+    margin: 0;
+    background-color: transparent;
+  }
+  .humburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    row-gap: 30px;
+  }
+  .hum {
+    width: 75%;
+    height: 12px;
+    background-color: gold;
+    position: relative;
+    bottom: 0px;
+    border-radius: 10px;
+  }
+  .aside {
+    background-color: gold;
+    width: 1000px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: transform 0.8s ease-in;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 0;
+  }
+  .aside.show {
+    transform: translateX(0);
+  }
+  .exit-button {
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .cancel {
+    width: 70%;
+    height: 12px;
+    background-color: black;
+    transform: rotate(-45deg);
+    position: absolute;
+    border-radius: 10px;
+  }
+  .cancel:last-child {
+    background-color: black;
+    transform: rotate(45deg);
+  }
+  ul {
+    position: absolute;
+    top: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+  }
+  li {
+    font-size: 110px;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+  }
+  a:first-child{
+    color: white;
+    text-shadow: 10px 10px 20px black;
+  }
+  .aside a:focus,
+  .aside a:visited,
+  .aside a:active {
+    /* Remove blue highlight when link is clicked or focused */
+    outline: none;
+  }
+  .a-1 {
+    display: none;
+  }
+}

@@ -1,0 +1,121 @@
+.container-2 {
+  background-color:rgba(245, 245, 220, 0.89);
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 40px;
+  padding-bottom: 300px;
+  padding-right: 40px;
+}
+.portfolios {
+  width: 100%;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 10px;
+}
+.portfolioheading {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h4 {
+  display: inline-block;
+  font-size: 40px;
+  position: relative;
+}
+.h4::before {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-color: gold;
+  position: absolute;
+  bottom: 0;
+}
+.portfolio-1 {
+  height: 400px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid;
+  border-bottom-width: 5px;
+  border-bottom-color: gold;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: translateY(60%);
+  transition: transform 1s ease;
+}
+.portfolio-1.show {
+  transform: translateY(0);
+}
+.coming-soon {
+  font-size: 40px;
+  text-decoration: line-through;
+  color: lightgray;
+}
+
+/*------------ media query -----------*/
+@media (max-width:720px) {
+  .container-2 {
+    width: 100%;
+    height: 6500px;
+    background-color:rgba(245, 245, 220, 0.89);
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-bottom: 200px;
+    padding-right: 0px;
+    padding-top: 200px;
+  }
+  .portfolios {
+    height: 6000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    margin-top: 0px;
+  }
+  .portfolioheading {
+    width: 1500px;
+    height: 100px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .h4 {
+    display: inline-block;
+    font-size: 140px;
+    position: relative;
+  }
+  .h4::before {
+    content: "";
+    width: 100%;
+    height: 15px;
+    background-color: gold;
+    position: absolute;
+    bottom: -25px;
+  }
+  .portfolio-1 {
+    height: 1200px;
+    width: 1300px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid;
+    border-bottom-width: 30px;
+    border-bottom-color: gold;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+  }
+  .coming-soon {
+    font-size: 120px;
+    text-decoration: line-through;
+    color: lightgray;
+  }
+}

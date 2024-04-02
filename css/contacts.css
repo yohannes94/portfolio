@@ -1,0 +1,344 @@
+.container-3 {
+  background-color: rgba(224, 255, 255, 0.911);
+  width: 100%;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+.contact-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  margin-left: 100px;
+}
+.contact-right {
+  height: 100%;
+}
+.fa-square-phone-flip,.fa-paper-plane {
+  font-size: 40px;
+  color: gold;
+  margin-right: 15px;
+  margin-bottom: 0;
+}
+.contact-heading {
+  font-size: 60px;
+  margin-bottom: 0;
+  position: relative;
+}
+.contact-heading::before {
+  content: "";
+  width: 60%;
+  height: 6px;
+  background-color: gold;
+  position: absolute;
+  bottom: 0px;
+}
+.contact-phone {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+.contact-email {
+  font-size: 18px;
+}
+.social-icons {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+}
+.emailandphone {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:0px;
+  margin-bottom: 0px;
+}
+.center {
+  display: grid;
+  align-items: center;
+}
+.fa-linkedin,.fa-github,.fa-telegram,.fa-square-twitter {
+  font-size: 40px;
+  color: black;
+  margin-right: 35px;
+}
+.fa-linkedin:hover {
+  color: gold;
+  transition: 0.5s;
+  transform: translateY(-4px);
+}
+.fa-github:hover {
+  color: gold;
+  transition: 0.5s;
+  transform: translateY(-4px);
+}
+.fa-telegram:hover {
+  color: gold;
+  transition: 0.5s;
+  transform: translateY(-4px);
+}
+.fa-square-twitter:hover {
+  color: gold;
+  transition: 0.5s;
+  transform: translateY(-4px);
+}
+.button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  padding-top: 20px;
+}
+.download {
+  width: 250px;
+  height: 60px;
+  background-color: gold;
+  margin-right: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  border: none;
+}
+.download:hover {
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transition: 1s;
+  transform: translateY(-8px);
+}
+form {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.input,.textarea {
+  width: 400px;
+  border: none;
+  padding-left: 10px;
+  font-size: 16px;
+  outline: none;
+}
+.label {
+  font-size: 20px;
+}
+.input {
+  height: 40px;
+}
+.input:focus {
+  box-shadow: 0px 0px 20px 3px gold;
+}
+.textarea:focus {
+  box-shadow: 0px 0px 20px 3px gold;
+}
+.submit,.reset {
+  width: 100px;
+  height: 40px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.submit {
+  background-color: black;
+  margin-right: 10px;
+  color: gold;
+}
+.submit:hover {
+  background-color: white;
+  border: 2px solid black;
+  transition: background-color 0.5s ease;
+}
+.reset {
+  background-color: gold;
+  color: black;
+}
+.reset:hover {
+  background-color: white;
+  border: 2px solid gold;
+  transition: background-color 0.5s ease;
+}
+
+fieldset {
+  border: none;
+  border-radius: 10px;
+  background-color: lightgray;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  width: 50%;
+  height: 400px;
+}
+legend {
+  text-align: center;
+  font-size: 40px;
+  color: gold;
+}
+
+/*------------ media query -----------*/
+@media (max-width:720px) {
+  .container-3 {
+    background-color: rgba(224, 255, 255, 0.911);
+    width: 100%;
+    height: 3800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding-bottom: 100px;
+  }
+  .contact-left {
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    justify-content: start;
+    align-items: center;
+    row-gap: 50px;
+    margin-bottom:50px;
+    margin-top: 100px;
+  }
+  .contact-right {
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+  }
+  .fa-square-phone-flip,.fa-paper-plane {
+    font-size: 155px;
+    color: gold;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+  .hh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 1500px;
+    height: 200px;
+  }
+  .contact-heading {
+    font-size: 140px;
+    margin-bottom: 200px;
+    position: relative;
+    text-align: center;
+  }
+  .contact-heading::before {
+    content: "";
+    width: 43%;
+    height: 20px;
+    background-color: gold;
+    position: absolute;
+    bottom: -20px;
+  }
+  .contact-phone {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+  .contact-email {
+    font-size: 60px;
+  }
+  .emailandphone {
+    height: 400px;
+    width: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1500px;
+  }
+  .fa-linkedin,.fa-github,.fa-telegram,.fa-square-twitter {
+    font-size: 170px;
+    color: black;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    padding-top: 20px;
+  }
+  .download {
+    width: 1000px;
+    height: 250px;
+    background-color: gold;
+    margin-right: 50px;
+    font-size: 90px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+  }
+  .input,.textarea {
+    width: 1200px;
+    border: none;
+    padding-left: 40px;
+    font-size: 80px;
+    outline: none;
+    border-radius: 30px;
+  }
+  .input {
+    height: 200px;
+  }
+  .input:focus {
+    box-shadow: 0px 0px 20px 3px gold;
+  }
+  .textarea {
+    height: 600px;
+  }
+  .textarea:focus {
+    box-shadow: 0px 0px 20px 3px gold;
+  }
+  .label {
+    font-size: 65px;
+  }
+  .submit,.reset {
+    width: 594px;
+    height: 180px;
+    border: none;
+    font-size: 80px;
+    border-radius: 30px;
+  }
+  .submit {
+    background-color: black;
+    color: gold;
+  }
+  .reset {
+    background-color: gold;
+  }
+  .submitnreset {
+    margin-top: 25px;
+    display: flex;
+    gap: 40px;
+  }
+  fieldset {
+    border: none;
+    background-color: hsla(0, 0%, 83%, 0.493);
+    padding: 100px;
+    width: 1100px;
+    height: 1700px;
+    border-radius: 100px;
+    margin-right: 50px;
+  }
+  legend {
+    text-align: center;
+    font-size: 140px;
+    color: black;
+  }
+}
