@@ -7,6 +7,42 @@ body {
   background-size: cover;
   overflow-x: hidden;
 }
+.loader {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.spinner {
+  border: 5px solid rgba(211, 211, 211, 0.5);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border-right-color: rgb(1, 218, 1);
+  animation: animation11 0.8s infinite ease-in-out;
+}
+.hide {
+  display: none;
+}
+@keyframes animation11 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    border-right-color: gold;
+  }
+ 
+  100% {
+    transform: rotate(360deg);
+    border-right-color: red;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -41,6 +77,24 @@ footer {
     background-position-x: center;
     background-position-y: center;
     padding: 0;
+    overflow-x: hidden;
+  }
+  .loader {
+    width: 1550px;
+    height: 100%;
+    z-index: 100;
+    background-color: white;
+    position: fixed;
+  }
+  .spinner {
+    border: 15px solid rgba(211, 211, 211, 0.5);
+    width: 200px;
+    height: 200px;
+    border-right-color: rgb(1, 218, 1);
+    animation: animation11 0.8s infinite ease-in-out;
+  }
+  .hide {
+    display: none;
   }
   main {
     margin-top: 0px;

@@ -10,6 +10,7 @@ const skill = document.querySelector('.skill');
 const skill1 = document.querySelector('.skill1');
 const skill2 = document.querySelector('.skill2');
 const skill3 = document.querySelector('.skill3');
+const loader = document.querySelector('.loader');
 
 
 humburger.addEventListener('touchstart', (event) => {
@@ -88,6 +89,12 @@ window.addEventListener('scroll', () => {
   } else {
     skill3.classList.remove('skill-4');
   }
+})
+
+window.addEventListener('load', (event) => {
+  setTimeout(() => {
+    loader.classList.add('hide');
+  }, 1500)
 })
 
 
